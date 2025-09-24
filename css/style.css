@@ -1,0 +1,131 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1c1c1b;
+    padding-top: 100px;
+}
+h1, h2, h3{
+    color: #b29053;
+    text-align: center;
+}
+
+p,li, table{
+    color: #e9dfcd;
+    text-align: center ;
+    font-size: 20px;
+    
+}
+
+ table, th, td{
+        border: 1px solid #826839;
+        border-collapse: collapse;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto
+        ;
+ }
+
+.navegacao{ 
+    position: fixed;
+    top: 0;
+    background: rgba(35, 35, 36, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 20px;   
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-nav{
+    height: 60px;
+    width: auto;
+    border-radius: 10px;
+}
+.menu{
+    position: relative;
+    left: 37%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: #b29053;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #b29053 ;
+    transition: 0.5s ease;
+}
+.menu-link:hover::after{
+    width: 100%;
+}
+
+.fachada-e-texto {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    margin: 40px auto; 
+    max-width: 1000px; 
+    padding: 0 20px; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.fachada-e-texto img {
+    
+    height: auto; 
+    border-radius:10px; 
+}
+
+.fachada-e-texto p {
+    flex: 1; 
+    max-width: 500px; 
+    line-height: 1.6; 
+    color: #e9dfcd; 
+}
+
+@media (max-width: 768px) {
+    .fachada-e-texto {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .fachada-e-texto img {
+        max-width: 90%;
+    }
+
+    .fachada-e-texto p {
+        max-width: 90%; 
+        text-align: center; 
+    }
+}
+
+.imagens-sugestao-chefe{
+    height:200px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.projetos-caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
